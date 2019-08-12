@@ -1,0 +1,13 @@
+*~
+.DS_Store
+.idea/
+*.iml
+*.p12
+.project
+.classpath
+*/target/
+src/test/resources/
+src/java/resources/application.yml
+.project
+.classpath
+.settings/
