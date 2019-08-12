@@ -25,9 +25,9 @@ public class ScoreUtil {
         int gunMoves = qipan.getGunMoveCount();
         int soldierCount = qipan.getSoldierCount();
         if(isGun){
-            return gunMoves*20 - soldierCount*150;
+            return gunMoves*35 - soldierCount*100;
         }else {
-            return soldierCount*120- gunMoves*20;
+            return soldierCount*100- gunMoves*35;
         }
     }
 

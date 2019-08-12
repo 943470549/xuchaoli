@@ -29,8 +29,10 @@ public class Room {
         ChessBoard board = room.chessBoard;
         for(int i =0 ;i <200; i++){
 
-            Move move1 = MoveUtils.bestMove(board,  7,true);
-
+            System.out.println("--------------start1----------");
+            long time1 = System.nanoTime();
+            Move move1 = MoveUtils3.bestMove(board,  6,true);
+            System.out.println("--------------end1----------" + (System.nanoTime() - time1)/1000000);
             board.move(move1);
             board.printMove(move1);
             board.printChessBoard();
@@ -39,7 +41,7 @@ public class Room {
                 break;
             }
 
-            Move move2 = MoveUtils3.bestMove(board,1, false);
+            Move move2 = MoveUtils3.bestMove(board,4, false);
             if(move2.getEnd().x == -1){
                 if(board.checkOver(i)){
                     System.out.println("sssss");
